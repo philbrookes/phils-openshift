@@ -1,0 +1,42 @@
+html {
+	font-family: "Open Sans";
+}
+body {
+	background-color: white;
+}
+
+#board {
+	width: 300px;
+	height: 300px;
+	margin: auto;
+}
+
+#board .row{
+	height: 100px;
+	float: left;
+	width: 100%;
+}
+
+#board .row .square{
+	float: left;
+	width: 80px;
+	height: 100%;
+	border-style: solid;
+	border-left: 2px;
+	border-top: 2px;
+	border-color: black;
+	line-height: 120px;
+	font-size: 80px;
+	padding-left: 15px;
+}
+#board.enabled .row .square.empty:hover{
+	cursor: pointer;
+}
+
+#board .row:last-of-type .square{
+	border-bottom: 0;
+}
+
+#board .row .square:last-of-type{
+	border-right: 0;
+}
