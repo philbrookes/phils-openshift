@@ -217,4 +217,4 @@ function startGame(player1, player2){
 	console.log("game starting between " + player1.id + " (" + player1.piece + ") and " + player2.id + " (" + player2.piece + ") , " + game.currentTurn.id + " to start.");
 }
 
-http.listen(80, function(){ console.log("ready!")});
+http.listen(8080, function(){ console.log("ready!")});
